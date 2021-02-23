@@ -1061,5 +1061,11 @@ background-size: cover;*/
     align-items: center;
 }
 
+.by img {
+    display: block;
+    max-height: 90vh;
+}
+
+
 
 
