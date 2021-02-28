@@ -555,6 +555,58 @@ body {
     color: rgba(255,201,4,1);
 }
 
+.fa-python {
+    color: rgba(255,201,4,1);
+    font-size: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.fa-python::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80px;
+    background-color: transparent;
+    border-radius: 2rem;
+}
+
+.fa-python:hover {
+    background: #155bb7;
+    border-radius: 1rem;
+    height: 85px;
+}
+
+.fa-python::after {
+    display: block;
+    content: "Python";
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.fa-python:hover::after {
+    visibility: visible;
+    transition: opacity 2s;
+    opacity: 1;
+    position: absolute;
+    color: rgba(255,201,4,1);
+}
+
+
 .banner h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
